@@ -3,7 +3,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>My Portfolio Website</title>
+    <h1>My Portfolio Website</h1>
     <link rel="stylesheet" href="style.css">
     <meta name="INDEX" content="INDEX,FOLLOW">
     <meta name="description" content="Lehigh University DES 070 Website">
@@ -17,27 +17,27 @@
   
   <h2>My Webpage</h2>
     <ul>
-      <li><a href="#">Jaelynn Chesson</a></li>
-      <li><a href="#">jrc222@lehigh.edu</a></li>
-      <li><a href="#">Social Media</a></li>
+      <li><a href="me.html">Jaelynn Chesson</a></li>
+      <li><a href="email.html">jrc222@lehigh.edu</a></li>
+      <li><a href="social.html">Social Media</a></li>
     </ul>
   
   <h2> P1: Interview Project</h2>
     <ul>
       <li><a href="notes.html">Notes</a></li>
-      <li><a href="#">My Website</a></li>
+      <li><a href="Mywebsite.html">My Website</a></li>
     </ul>
   
   <h2> P2: Wireframe Project</h2>
     <ul>
-      <li><a href="#">Easy</a></li>
-      <li><a href="#">Hard</a></li>
+      <li><a href="easy.html">Easy</a></li>
+      <li><a href="hard.html">Hard</a></li>
     </ul>
   
   <h2> P3: Oblique Strategies</h2>
     <ul>
-      <li><a href="#">Are.na Channel</a></li>
-      <li><a href="#">My Site</a></li>
+      <li><a href="arena.html">Are.na Channel</a></li>
+      <li><a href="mysite.html">My Site</a></li>
     </ul>
   
   
