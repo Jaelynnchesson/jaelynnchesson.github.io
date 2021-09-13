@@ -45,29 +45,6 @@
   
   
   
-  <a class="trigger_popup_fricc">Click here to show the popup</a>
-
-<div class="hover_bkgr_fricc">
-    <span class="helper"></span>
-    <div>
-        <div class="popupCloseButton">&times;</div>
-        <p>Add any HTML content<br />inside the popup box!</p>
-    </div>
-</div>
-  
-  $(window).load(function () {
-    $(".trigger_popup_fricc").click(function(){
-       $('.hover_bkgr_fricc').show();
-    });
-    $('.hover_bkgr_fricc').click(function(){
-        $('.hover_bkgr_fricc').hide();
-    });
-    $('.popupCloseButton').click(function(){
-        $('.hover_bkgr_fricc').hide();
-    });
-});
-  
-  
   
   </body>
 </html>
