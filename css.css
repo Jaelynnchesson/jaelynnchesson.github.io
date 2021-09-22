@@ -20,7 +20,8 @@ body {
       text-align: center;
   }
   h3{
-      text-align: center;
+    text-align: center;
+    margin-left: 20px
   }
 p{
     text-align: center;
@@ -33,3 +34,10 @@ img {
   width: 40%;
 }
 
+ul.b {
+  list-style-type: square;
+}
+ul {
+  background: #3399ff;
+  padding: 20px;
+}
