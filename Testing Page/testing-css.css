@@ -1,51 +1,76 @@
+/* Demo styles, not related to Grid. */
+.demo {
+	color: rgba(255, 255, 255, 1);
+	padding: 2rem;
+	border-radius: 3px;
+}
 
-<div class="container">
-	<div class="row">
-		<header class="col demo">Header</header>		
-	</div>
-	<div class="row">
-		<aside class="col-md-4 demo">Sidebar</aside>
-		<main class="col demo">Main content</main>
-	</div>
-	<div class="row">
-		<footer class="col demo">Footer</footer>
-	</div>
-</div>
+header.demo {
+	background-color: #f48220;
+}
 
-<br><br><br>
+aside.demo {
+	background-color: #52AA8A;
+}
 
-<!-- Foundation -->
-<div class="grid-container">
-	<div class="grid-x">
-		<header class="cell demo">Header</header>
-	</div>
-	<div class="grid-x">
-		<aside class="cell medium-4 demo">Sidebar</aside>
-		<main class="cell auto demo">Main content</main>
-	</div>
-	<div class="grid-x">
-		<footer class="cell demo">Footer</footer>
-	</div>
-</div>
+main.demo {
+	background-color: #F76C5E;
+}
 
-<br><br><br>
+footer.demo {
+	background-color: #3AAED8;	
+}
 
-<!-- Floats -->
-<div class="demo-container">
-	<header class="demo">Header</header>
-	<div class="clearfix">
-		<aside class="demo">Sidebar</aside>
-		<main class="demo">Main content</main>
-	</div>
-	<footer class="demo">Footer</footer>
-</div>
+/* Float-based layout. */
+@media only screen and (min-width: 600px) {
+	.demo-container {
+		width: 95%;
+		margin: 0 auto;
+	}
+	
+	.demo-container aside {
+		width: 33%;
+		float: left;
+	}
+	
+	.demo-container main {
+		float: left;
+		width: 67%;
+	}
+}
 
-<br><br><br>
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
 
-<!-- CSS Grid -->
-<div class="demo-grid">
-	<header class="demo">Header</header>
-	<aside class="demo">Sidebar</aside>
-	<main class="demo">Main content</main>
-	<footer class="demo">Footer</footer>
-</div>
+/* CSS Grid layout. */
+.demo-grid {
+	width: 95%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+}
+
+.demo-grid header,
+.demo-grid footer,
+.demo-grid aside,
+.demo-grid main {
+	grid-column: span 2;
+}
+
+.demo-grid aside {
+	grid-row: 3;
+}
+
+@media only screen and (min-width: 600px) {
+	.demo-grid aside {
+		grid-column: 1;
+		grid-row: 2;
+	}	
+
+	.demo-grid main {
+		grid-column: 2 / -1;
+	}	
+}
